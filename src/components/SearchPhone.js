@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
 import { connect } from 'react-redux' ;
 import { setPhone } from '../actions';
-import { Link } from 'react-router-dom';
 import { token } from '../actions/secrets';
 import FormCode from './FormCode';
 
@@ -31,12 +29,10 @@ class SearchPhone extends Component{
     let device  = values.device;
     this.setState({'loading':true});
     let url = `https://fonoapi.freshpixl.com/v1/getdevice?device=${device}&token=${token}`;
-    console.log(url);
     fetch(url,{
       method: "GET"
     }).then(response=>response.json())
     .then(json=> { 
-    console.log('ddd');
         this.props.setPhone(json, device);
         this.setState({'loading':false});
         this.setState({'completed':true});

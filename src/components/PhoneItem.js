@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux' ;
 import { bindActionCreators } from 'redux';
-import birdyImage from '../assets/birdy.png';
 
 class PhoneItem extends Component{
   constructor(){

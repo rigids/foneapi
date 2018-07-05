@@ -6,10 +6,7 @@ import PhoneItem from './PhoneItem';
 class PhoneList extends Component{
 
 render(){
-    var newArr = [];
-    var result = this.props;
-    console.log(result.mobiles);
-    
+    var result = this.props;    
     return(
       <div className="container">
         
