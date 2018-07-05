@@ -1,0 +1,249 @@
+ @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+body{
+  padding: 0 5%;
+  text-align:center;
+  color: #00aced;
+  background: url('../assets/bg.png');
+  background-repeat: repeat;
+}
+.form-wrapper{
+  display: inline-block;
+  padding-right: 20px;
+}
+.form-elememt-block{
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.text-danger {
+  color: #dc3545 !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  bottom: 0;
+}
+.form-inline label{
+  display: inline-block;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #eee;
+  background-color: rgba(36,180,255,0.8);
+  border-color: #24b4ff;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.btn{
+  background: #24b4ff;
+  color: #fff;
+}
+.result-text{  
+  padding: 20px 0 10px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+.has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.form--wrapper{
+  font-size: 22px;
+  word-wrap: break-word;
+  padding-top: 15%;
+  transform: scale(1);transition: 0.15s all ease;
+}
+.results__loaded{
+  padding-top: 50px;
+}
+h2,.form--wrapper{
+  color:#fff;
+}
+.control-label{
+  padding-right: 7px;
+}
+.form-inline{
+  padding:30px 0;
+  justify-content: center;
+}
+.form-group{
+  padding-right: 30px;
+}
+
+.loading-image{
+  min-height: 100px;
+  background: url('../assets/loading.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.phone__item{
+  background: #fff;
+  padding: 60px 20px;
+  height: 100%;
+  position: relative;
+}
+.additional-item {
+  padding-top: 120px;
+}
+.phone__row{
+  padding-bottom: 80px;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+.phone__container{
+  position:relative;
+}
+.section--divider{
+  display:flex;
+}
+.section__index{
+  background: #06a1f1;
+  padding: 16px 5px;
+  width: 10%;
+  float: left;
+  color: #fff;
+  font-size: 55px;
+}
+.phone__handler{
+  padding: 6px 12px 10px;
+  width: 90%;
+  float: left;
+  background: #24b4ff;
+  color: #f7f7f7;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.phone__key{
+   max-width:450px;
+}
+.phone__name{
+  font-size:28px;
+}
+.posted__on{
+  font-size:14px;
+}
+.info__text{
+  color:#333;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align:left;
+  font-family: 'Roboto', sans-serif;
+}
+.save-wrapper{
+  position: absolute;
+  top: -48px;
+  text-align: center;
+  left: 0;
+  z-index: 9999;
+  right: 0;
+}
+.save-button{
+  background: #06a1f1;
+  height: 90px;
+  width: 90px;
+  color: #f7f7f7;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 36px;
+  padding: 5px 10px;
+  word-wrap: break-word;
+}
+.save-button:hover {
+  background: orange;
+}
+.saved--state{
+    background: orange;
+}
+
+.info-save{
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+.menu--style{
+  background: url('../assets/nav_bgg.png');
+  border-radius: 4px;
+}
+.menu--list{
+  text-align: right;
+  margin: 40px 0;
+  padding: 12px 20px;
+}
+.menu--list a{
+  color: #fff;
+  font-size: 20px;
+  display: inline-block; 
+  text-align: right;
+}
+.table-responsive {
+    display: table;
+}
+@media (min-width: 1400px){
+  .container {
+    max-width: 1340px;
+  }
+}
+@media (min-width:767px){
+  .row-sm-eq-height{
+    display:flex;
+  }
+  .info-save{
+  }
+}
+@media (max-width:992px){
+  .section__index{
+    font-size: 32px;
+  }
+
+}
+@media (max-width:767px){
+  .table-responsive {
+    display: block;
+  }
+  .phone__item {
+    min-width: 370px;
+  }
+  .phone__name {
+    font-size: 18px;
+  }
+  .form-wrapper{
+    padding-right: 0;
+    display: block;
+  }
+  .form-elememt-block {
+    display: block;
+    margin-right: 0;
+  }
+  .section__index{
+    display: none;
+  }
+  .phone__handler {
+    width: 100%;
+    float: none;
+  }
+}
